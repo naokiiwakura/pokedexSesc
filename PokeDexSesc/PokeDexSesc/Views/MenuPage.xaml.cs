@@ -20,8 +20,8 @@ namespace PokeDexSesc.Views
 
             menuItems = new List<HomeMenuItem>
             {
-                new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
-                new HomeMenuItem {Id = MenuItemType.About, Title="About" }
+                new HomeMenuItem {Id = MenuItemType.Pokemons, Title="Pokemons" },
+                new HomeMenuItem {Id = MenuItemType.Sobre, Title="Sobre" }
             };
 
             ListViewMenu.ItemsSource = menuItems;

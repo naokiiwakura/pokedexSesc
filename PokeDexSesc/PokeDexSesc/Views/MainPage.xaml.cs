@@ -21,7 +21,7 @@ namespace PokeDexSesc.Views
 
             MasterBehavior = MasterBehavior.Popover;
 
-            MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
+            MenuPages.Add((int)MenuItemType.Pokemons, (NavigationPage)Detail);
         }
 
         public async Task NavigateFromMenu(int id)
@@ -30,10 +30,10 @@ namespace PokeDexSesc.Views
             {
                 switch (id)
                 {
-                    case (int)MenuItemType.Browse:
+                    case (int)MenuItemType.Pokemons:
                         MenuPages.Add(id, new NavigationPage(new ItemsPage()));
                         break;
-                    case (int)MenuItemType.About:
+                    case (int)MenuItemType.Sobre:
                         MenuPages.Add(id, new NavigationPage(new AboutPage()));
                         break;
                 }
